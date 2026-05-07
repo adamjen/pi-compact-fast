@@ -13,7 +13,7 @@ import type { ExtensionAPI } from "@mariozechner/pi-coding-agent";
 import { convertToLlm, serializeConversation } from "@mariozechner/pi-coding-agent";
 
 // Model ID defined in ~/.pi/agent/models.json under llama-swap provider
-const COMPACT_MODEL_ID = "qwen-35b-moe";
+const COMPACT_MODEL_ID = "qwen3.6-35b";
 
 export default function (pi: ExtensionAPI) {
 	let useFastModel = false;

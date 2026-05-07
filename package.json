@@ -1,6 +1,6 @@
 {
   "name": "@adamjen/pi-compact-fast",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "/compact-fast command for Pi — compacts sessions with a fast local model instead of your main conversation model.",
   "license": "MIT",
   "author": "adamjen",
