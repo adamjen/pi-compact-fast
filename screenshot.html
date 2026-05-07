@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>pi-compact-fast screenshot</title>
+<style>
+  body {
+    background: #0d1117;
+    font-family: 'JetBrains Mono', 'Fira Code', monospace;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+  }
+  .terminal {
+    width: 820px;
+    background: #161b22;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    border: 1px solid #30363d;
+  }
+  .titlebar {
+    background: #1c2128;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .dot {
+    width: 13px; height: 13px; border-radius: 50%;
+  }
+  .red { background: #f85149; }
+  .yellow { background: #d29922; }
+  .green { background: #3fb950; }
+  .titlebar span {
+    flex: 1; text-align: center; color: #8b949e; font-size: 13px;
+  }
+  pre {
+    margin: 0; padding: 20px 24px; color: #c9d1d9; line-height: 1.65; font-size: 13px;
+  }
+  .system { color: #8b949e; opacity: 0.7; }
+  .model-label { color: #a371f7; }
+  .command-line { color: #c9d1d9; display: flex; gap: 8px; align-items: center; margin-top: 8px; }
+  .prompt { color: #58a6ff; font-weight: bold; }
+  .slash-cmd { color: #ffa657; font-weight: bold; }
+  .cursor { display: inline-block; width: 9px; height: 18px; background: #c9d1d9; animation: blink 1s step-end infinite; margin-left: 2px; vertical-align: middle; border-radius: 1px; }
+  @keyframes blink { 50% { opacity: 0; } }
+  .notification { color: #3fb950; margin-top: 4px; font-size: 12px; }
+  .status-line { color: #8b949e; font-size: 12px; margin-top: 6px; border-bottom: 1px solid #21262d; padding-bottom: 6px; }
+
+  /* Autocomplete dropdown */
+  .autocomplete-row { display: flex; gap: 8px; align-items: center; color: #c9d1d9; font-size: 13px; margin-top: 4px; }
+  .ac-cmd { background: #264f78; padding: 2px 8px; border-radius: 4px; font-weight: bold; }
+
+</style>
+</head>
+<body>
+<div class="terminal">
+  <div class="titlebar">
+    <span class="dot red"></span>
+    <span class="dot yellow"></span>
+    <span class="dot green"></span>
+    <span>pi — ~/.pi/sessions/main.jsonl</span>
+  </div>
+<pre>
+<span class="system">System: Stepping back to review the architecture...</span>
+
+<span class="model-label">qwen3.6-27b-am17am</span>
+The key insight is that we need a direct API call rather than swapping models in-place. This follows the same pattern as Pi's custom-compaction extension...
+
+[ ... conversation continues ... ]
+
+<span class="system">Tokens: 84,312 (65% context used)</span>
+
+<div class="notification">ℹ Compaction started with qwen-35b-moe...</div>
+<div class="notification">✓ Fast compaction completed</div>
+
+<span class="model-label">qwen3.6-27b-am17am</span>
+Great — session compacted. Where were we?
+
+<span class="status-line">Tokens: 4,820 (4%) · qwen3.6-27b-am17am · llama-swap</span>
+<div class="command-line"><span class="prompt">❯</span><span class="slash-cmd">/compact-fast</span><span class="cursor"></span></div></pre>
+</div>
+</body>
+</html>

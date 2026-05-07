@@ -1,0 +1,24 @@
+{
+  "name": "@adamjen/pi-compact-fast",
+  "version": "1.0.0",
+  "description": "/compact-fast command for Pi — compacts sessions with a fast local model instead of your main conversation model.",
+  "license": "MIT",
+  "author": "adamjen",
+  "keywords": [
+    "pi-package"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamjen/pi-compact-fast.git"
+  },
+  "homepage": "",
+  "peerDependencies": {
+    "@mariozechner/pi-coding-agent": "",
+    "@mariozechner/pi-ai": ""
+  },
+  "pi": {
+    "extensions": [
+      "./extensions/index.ts"
+    ]
+  }
+}
