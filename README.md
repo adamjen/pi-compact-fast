@@ -6,7 +6,7 @@
 
 Pi normally uses your current conversation model for compaction (summarizing the session). This extension adds `/compact-fast` which:
 
-1. Looks up `qwen-35b-moe` from your configured models (`models.json`)
+1. Looks up `qwen3.6-35b` from your configured models (`models.json`)
 2. Uses that model directly via a separate API call to generate the summary
 3. Returns the summary to Pi's built-in compaction system
 
@@ -30,7 +30,7 @@ pi -e npm:@adamjen/pi-compact-fast
 /compact-fast
 ```
 
-That's it — Pi will compact the session using `qwen-35b-moe` instead of your current model.
+That's it — Pi will compact the session using `qwen3.6-35b` instead of your current model.
 
 ## Configure a different model
 
